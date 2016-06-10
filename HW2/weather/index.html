@@ -1,0 +1,75 @@
+<html>
+<head>
+<h1>Search the weather</h1>
+
+	<!-- jQuery -->
+	<!-- <script src="js/jquery1.6.1.js"></script> -->
+	<script src="./js/jquery.min.js"></script>
+	<script src = "js/cities.js"></script>
+	<script src="js/main.js"></script>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<!-- Google fonts -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,500' rel='stylesheet' type='text/css'> -->
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table id="main">
+	<tr>
+		<td id="searchCol">
+			<p><select class="form-select" id="citiesSelect"></select></p>
+			<!-- <p><input id="searchInput" type="text" class="form-control" placeholder="Enter city name"/></p> -->
+			<!-- <p><input id="stateInput" type="text" class="form-control" placeholder="Enter state name"/></p> -->
+			<div id="warning-message" class="alert alert-danger" role="alert">Incorrect city / state.</div>
+			<p><button id="search" type="button" class="btn btn-default">Search</button></p>
+		</td>
+		<td id="resultCol">
+			<div id="response">
+				<table id="data">
+					<div id="icon">
+						<img id="weather-icon" />
+					</div>
+					<tr id="city">
+						<td><label>City:&nbsp;</label><span></span></td>
+
+					</tr>
+					<tr id="country">
+						<td><label>Country:&nbsp;</label><span></span></td>
+					</tr>
+					<tr id="full_name">
+						<td><label>Full name:&nbsp;</label><span></span></td>
+					</tr>
+					<tr id="temperature">
+						<td><label>Temperature:&nbsp;</label><span></span></td>
+					</tr>
+					<tr id="relative_humidity">
+						<td><label>Relative humidity:&nbsp;</label><span></span></td>
+					</tr>
+				</table>
+				<hr />
+				<table>
+					<tr id="current_timezone">
+						<td><label>Timezone: </label><span></span></td>
+					</tr>
+					<tr id="utc_offset">
+						<td><label>UTC Offset: </label><span></span></td>
+					</tr>
+					<tr id="city_time">
+						<td><label>City time: </label><span></span></td>
+					</tr>
+					<tr id="local_time">
+						<td><label>Local time: </label><span></span></td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td id="mapCell">
+			<img id="mapImg" />
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
